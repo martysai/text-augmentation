@@ -1,5 +1,6 @@
 # Text Augmentation Coursework
 
+## Necessary courses:
 1. Must have: [Stanford Course](http://web.stanford.edu/class/cs224n/)
 2. Desirable: [MIPT Statistics](https://www.coursera.org/learn/stats-for-data-analysis)
 3. Desirable: [Yandex Data School NLP](https://github.com/yandexdataschool/nlp_course)
