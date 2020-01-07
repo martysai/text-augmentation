@@ -1,0 +1,6 @@
+The approach is to use a CNN with an inception-like layer (6 parrallel convolutions with 128 filters each responsible for
+n-grams of sizes 1-5 and a skip-n-gram (convolution with dilation 2)), global maxPooling afterwards and a couple fully
+connected layers on top.
+
+Preprocessing is simple: converting to lowercase, regexp tokenizing, getting rid of the stopwords, replacing numbers with ###
+(I also tried lemmatization but it worsened the performance). 300 dimentional embeddings trained on GoogleNews were chosen.
