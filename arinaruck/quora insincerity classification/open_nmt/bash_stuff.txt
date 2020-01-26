@@ -1,0 +1,8 @@
+pip install sentencepiece
+pip install OpenNMT-py
+for i in {0..num_files};
+do onmt_translate -model model.pt -src src_$i.txt -output output_$i.txt -replace_unk -gpu 0;
+echo $i; 
+wc -l src_$i.txt;
+wc -l output_$i.txt;
+done
